@@ -126,7 +126,7 @@ class MyApp extends StatelessWidget {
             Divider(color: Colors.white,),
             Text("Practical qualification",style: TextStyle(color:Colors.white,fontWeight: FontWeight.w400)),
             Row(children: [
-              Text("1- Project Management",style: TextStyle(color:Colors.white,fontWeight: FontWeight.w400))
+              Text("1- Project Management",style: TextStyle(color:Colors.white,fontWeight: FontWeight.w400)),Text("new branch")
             ],)
           ],
         ),
