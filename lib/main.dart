@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 72, 91, 100),
+        backgroundColor: Color.fromARGB(255, 3, 120, 237),
         appBar: AppBar(
           title: Text(
             "CV",
@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             Container(
+              color: const Color.fromARGB(128, 33, 243, 208),
               width: double.infinity,
              
               child: Column(
@@ -60,6 +61,15 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+           
+           
+           
+        
+          
+          
+          
+          
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -79,7 +89,7 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
-            Divider(color: Colors.white),
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -126,8 +136,9 @@ class MyApp extends StatelessWidget {
             Divider(color: Colors.white,),
             Text("Practical qualification",style: TextStyle(color:Colors.white,fontWeight: FontWeight.w400)),
             Row(children: [
-              Text("1- Project Management",style: TextStyle(color:Colors.white,fontWeight: FontWeight.w400)),Text("new branch")
+              Text("1- Project Management",style: TextStyle(color:Colors.white,fontWeight: FontWeight.w400)),
             ],)
+             
           ],
         ),
       ),
