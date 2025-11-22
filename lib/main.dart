@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 3, 120, 237),
+        backgroundColor: const Color.fromARGB(255, 0, 126, 143),
         appBar: AppBar(
           title: Text(
             "CV",
@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: const Color.fromARGB(255, 0, 126, 143),
         ),
         body: Column(
           children: [
             Container(
-              color: const Color.fromARGB(128, 33, 243, 208),
+              color: const Color.fromARGB(255, 0, 126, 143),
               width: double.infinity,
              
               child: Column(
