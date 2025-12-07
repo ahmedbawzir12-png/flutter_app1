@@ -109,228 +109,231 @@ class _ProductsState extends State<Products> {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          SizedBox(height: 33),
-          Row(
-            children: [
-              SizedBox(width: 20),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(96, 90, 88, 88),
-                      spreadRadius: 0,
-                      blurRadius: 20,
-                      offset: Offset(0, 6),
-                    ),
-                  ],
-                ),
-                width: 130,
-                height: 250,
-                child: Column(
-                  children: [
-                    Image(image: AssetImage("images/man_watch.png")),
-                    Text(
-                      "ساعات رجالية",
-                      style: GoogleFonts.tajawal(
-                        textStyle: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
-                        ),
+      body: Padding(
+        padding: const EdgeInsets.all(26.0),
+        child: Column(
+          children: [
+            SizedBox(height: 33),
+            Row(
+              children: [
+                SizedBox(width: 20),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color.fromARGB(96, 90, 88, 88),
+                        spreadRadius: 0,
+                        blurRadius: 20,
+                        offset: Offset(0, 6),
                       ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MenWatches()),
-                        );
-                      },
-                      child: Text(
-                        "للمزيد",
+                    ],
+                  ),
+                  width: 130,
+                  height: 250,
+                  child: Column(
+                    children: [
+                      Image(image: AssetImage("images/man_watch.png")),
+                      Text(
+                        "ساعات رجالية",
                         style: GoogleFonts.tajawal(
                           textStyle: TextStyle(
-                            fontSize: 14,
+                            fontSize: 17,
                             fontWeight: FontWeight.w700,
                             color: Colors.black,
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 60),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(96, 90, 88, 88),
-                      spreadRadius: 0,
-                      blurRadius: 20,
-                      offset: Offset(0, 6),
-                    ),
-                  ],
-                ),
-
-                width: 130,
-                height: 250,
-                child: Column(
-                  children: [
-                    Image(image: AssetImage("images/women_watch.png")),
-
-                    Text(
-                      "ساعات نسائيه",
-                      style: GoogleFonts.tajawal(
-                        textStyle: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MenWatches()),
+                          );
+                        },
+                        child: Text(
+                          "للمزيد",
+                          style: GoogleFonts.tajawal(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(height: 12),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => WomenWatches(),
-                          ),
-                        );
-                      },
-                      child: Text(
-                        "للمزيد",
+                    ],
+                  ),
+                ),
+                SizedBox(width: 60),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color.fromARGB(96, 90, 88, 88),
+                        spreadRadius: 0,
+                        blurRadius: 20,
+                        offset: Offset(0, 6),
+                      ),
+                    ],
+                  ),
+        
+                  width: 130,
+                  height: 250,
+                  child: Column(
+                    children: [
+                      Image(image: AssetImage("images/women_watch.png")),
+        
+                      Text(
+                        "ساعات نسائيه",
                         style: GoogleFonts.tajawal(
                           textStyle: TextStyle(
-                            fontSize: 14,
+                            fontSize: 17,
                             fontWeight: FontWeight.w700,
                             color: Colors.black,
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: 20),
-          Row(
-            children: [
-              SizedBox(width: 20),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(96, 90, 88, 88),
-                      spreadRadius: 0,
-                      blurRadius: 20,
-                      offset: Offset(0, 6),
-                    ),
-                  ],
-                ),
-
-                width: 130,
-                height: 250,
-                child: Column(
-                  children: [
-                    Image(image: AssetImage("images/child_watch.png")),
-
-                    Text(
-                      "ساعات اطفال",
-                      style: GoogleFonts.tajawal(
-                        textStyle: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => WomenWatches(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          "للمزيد",
+                          style: GoogleFonts.tajawal(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(height: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Child()),
-                        );
-                      },
-                      child: Text(
-                        "للمزيد",
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              children: [
+                SizedBox(width: 20),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color.fromARGB(96, 90, 88, 88),
+                        spreadRadius: 0,
+                        blurRadius: 20,
+                        offset: Offset(0, 6),
+                      ),
+                    ],
+                  ),
+        
+                  width: 130,
+                  height: 250,
+                  child: Column(
+                    children: [
+                      Image(image: AssetImage("images/child_watch.png")),
+        
+                      Text(
+                        "ساعات اطفال",
                         style: GoogleFonts.tajawal(
                           textStyle: TextStyle(
-                            fontSize: 14,
+                            fontSize: 17,
                             fontWeight: FontWeight.w700,
                             color: Colors.black,
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 60),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(96, 90, 88, 88),
-                      spreadRadius: 0,
-                      blurRadius: 20,
-                      offset: Offset(0, 6),
-                    ),
-                  ],
-                ),
-                width: 130,
-                height: 250,
-                child: Column(
-                  children: [
-                    Image(image: AssetImage("images/wall_watch.png")),
-                    Text(
-                      "ساعات جدران",
-                      style: GoogleFonts.tajawal(
-                        textStyle: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
+                      SizedBox(height: 10),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Child()),
+                          );
+                        },
+                        child: Text(
+                          "للمزيد",
+                          style: GoogleFonts.tajawal(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(height: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Wall()),
-                        );
-                      },
-                      child: Text(
-                        "للمزيد",
+                    ],
+                  ),
+                ),
+                SizedBox(width: 60),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color.fromARGB(96, 90, 88, 88),
+                        spreadRadius: 0,
+                        blurRadius: 20,
+                        offset: Offset(0, 6),
+                      ),
+                    ],
+                  ),
+                  width: 130,
+                  height: 250,
+                  child: Column(
+                    children: [
+                      Image(image: AssetImage("images/wall_watch.png")),
+                      Text(
+                        "ساعات جدران",
                         style: GoogleFonts.tajawal(
                           textStyle: TextStyle(
-                            fontSize: 14,
+                            fontSize: 17,
                             fontWeight: FontWeight.w700,
                             color: Colors.black,
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                      SizedBox(height: 10),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Wall()),
+                          );
+                        },
+                        child: Text(
+                          "للمزيد",
+                          style: GoogleFonts.tajawal(
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
